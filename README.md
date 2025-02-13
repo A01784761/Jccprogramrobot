@@ -5,21 +5,25 @@
 
 ## Introducción
 
-Este repositorio, titulado "Robotics01," es una colección de códigos de robótica enfocados en la cinemática directa, cinemática inversa y dinámica de manipuladores robóticos. Los códigos están basados principalmente en el **Toolbox de Peter Corke** y la **API de RoboDK**. Estos recursos ofrecen herramientas poderosas para la simulación y análisis de robots en entornos académicos y de investigación.
+Este repositorio, titulado "Robotics01," es una colección de códigos de robótica enfocados en la cinemática directa, cinemática inversa y dinámica de manipuladores robóticos. Los algoritmos están basados principalmente en el **Toolbox de Peter Corke** y la **API de RoboDK**, herramientas ampliamente utilizadas en simulación y control robótico. 
 
-## Visualización
+El objetivo es proporcionar un punto de partida para la experimentación y simulación de robots, ideal para investigadores, estudiantes y entusiastas de la robótica.
 
-Para hacer más atractivo este repositorio, hemos incluido algunas imágenes ilustrativas relacionadas con la robótica:
+## Instalación
 
-1. **Animación de un robot Panda usando el Toolbox de Peter Corke:**
+Para utilizar este proyecto, es importante instalar las dependencias necesarias:
 
-   ![Panda Robot](https://github.com/petercorke/robotics-toolbox-python/raw/master/docs/figs/panda1.gif)
+```bash
+# Clona el repositorio
+git clone https://github.com/tu_usuario/Robotics01.git
 
-2. **Inspiración robótica de SpaceX y Tesla:**
+# Accede al directorio
+cd Robotics01
 
-   ![SpaceX Falcon 9](https://upload.wikimedia.org/wikipedia/commons/e/e7/SpaceX_Falcon_9_Launch.jpg)
+# Crea un entorno virtual (opcional)
+python -m venv venv
+source venv/bin/activate  # O usa .\venv\Scripts\activate en Windows
 
-   ![Tesla Robótica](https://upload.wikimedia.org/wikipedia/commons/8/83/Tesla_Factory_Fremont%2C_CA.jpg)
-
-¡Esperamos que encuentres útiles estos recursos para tus proyectos robóticos!
+# Instala las dependencias
+pip install -r requirements.txt
 
