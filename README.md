@@ -1,2 +1,20 @@
-Vamos a generar un README para un Repositorio de Github. El código que se manejará ahi es principalmente en Python, para que incluyamos una etiqueta o badge de "Python", y otra de "Robotics." El titulo del repositorio es "Robotics01". En el cuerpo del README ayudame a poner dos secciones, la primera es Introduccion, donde se describe brevemente que es un repositorio para los códigos de robótica de cinemática directa, inversa, y dinámica, basados principalmente en el Toolbox de Peter Corke y RoboDK API. La segunda seccion es para insertar una imagen para hacerlo más atractivo, la imagen es: https://github.com/petercorke/robotics-toolbox-python/raw/master/docs/figs/panda1.gif
+# Robotics01
 
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Robotics](https://img.shields.io/badge/Topic-Robotics-green)
+
+## Introducción
+
+Este repositorio contiene códigos relacionados con la robótica enfocados en:
+
+- Cinemática directa
+- Cinemática inversa
+- Dinámica
+
+Los algoritmos y herramientas se basan principalmente en el **Toolbox de Peter Corke** y la **RoboDK API** para facilitar el modelado y la simulación de robots.
+
+## Visualización
+
+Para dar una idea de las simulaciones realizadas, aquí una imagen de muestra del Toolbox de Peter Corke:
+
+![Panda Robot](https://github.com/petercorke/robotics-toolbox-python/raw/master/docs/figs/panda1.gif)
