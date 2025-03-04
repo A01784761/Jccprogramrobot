@@ -22,7 +22,7 @@ robot=rtb.DHRobot(
 print(robot)
 
 robot.qz=[np.deg2rad(0),np.deg2rad(0),np.deg2rad(0),np.deg2rad(0),np.deg2rad(0),np.deg2rad(0)]
-# robot.teach(robot.qz)
+#robot.teach(robot.qz)
 
 T_inicial = robot.fkine(robot.qz)
 print(f"Matriz de posición inicial:\n{T_inicial}")
