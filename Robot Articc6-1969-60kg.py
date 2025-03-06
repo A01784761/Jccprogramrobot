@@ -10,6 +10,8 @@ import numpy as np
 import roboticstoolbox as rtb
 np.set_printoptions(suppress=True, precision=4)
 
+
+# Declaramos la matriz Denavit Hartenberg. 
 robot=rtb.DHRobot(
     [
         rtb.RevoluteDH(d=0.550, a=0.2, alpha=np.pi/2, qlim=[np.deg2rad(-185), np.deg2rad(185)]),
@@ -26,3 +28,4 @@ robot.qz=[np.deg2rad(0),np.deg2rad(0),np.deg2rad(0),np.deg2rad(0),np.deg2rad(0),
 
 T_inicial = robot.fkine(robot.qz)
 print(f"Matriz de posición inicial:\n{T_inicial}")
+

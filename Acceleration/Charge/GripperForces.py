@@ -10,8 +10,11 @@ omega = 0.0
 alineal = np.array([0.0, 0.0, 0.0])
 mass = 0.0
 gravity = np.array([0.0, 0.0, 0.0])
+linearv= np.array([0.0, 0.0, 0.0])
 
-def calculateGripperForces(atotal, alpha, r, omega, alineal, mass, gravity):
+
+
+def calculateGripperForces(atotal, alpha, r, omega, alineal, mass, gravity,linearv):
     # Gravitational force
     F_gravity = mass * gravity
     
@@ -19,10 +22,10 @@ def calculateGripperForces(atotal, alpha, r, omega, alineal, mass, gravity):
     F_inertia = mass * alineal
     
     # Centripetal force due to angular velocity
-    F_centripetal = mass * (omega**2 * r)
+    F_centripetal = - mass * (omega**2 * r)
     
     # Coriolis force due to angular acceleration
-    F_coriolis = 2 * mass * np.cross(omega, alpha)
+    F_coriolis = 2 * mass * np.cross(omega, linearv)
     
     # Total force required by the gripper
     F_total = F_gravity + F_inertia + F_centripetal + F_coriolis
