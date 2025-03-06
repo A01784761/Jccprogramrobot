@@ -46,8 +46,16 @@ T= [
 ]
 
 T_matrix= np.array([p.A for p in T])
+q=[0,1,0,0,0,0]
+#T_angulos= robot.ikine_LM(np.array(T),q0=q)
+T_angulos= robot.ikine_LM(np.array(T),q0=q).q
+#tamaño de t_angulos
+print(T_angulos)
 
-robot.plot(q=T, limits=[-1.737, 1.737, -1.737, 1.737, -2.3, 2.3],eeframe=True, backend='pyplot',shadow=True,jointaxes=False,block=True)
+robot.plot(np.array(T_angulos),block=True,dt=7)
+
+
+robot.plot(q=T_angulos, limits=[-1.737, 1.737, -1.737, 1.737, -2.3, 2.3],eeframe=True, backend='pyplot',shadow=True,jointaxes=False,block=True)
 
 #Preguntar al profe 
 via= np.empty((0,3))
