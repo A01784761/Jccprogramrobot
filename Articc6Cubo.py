@@ -47,7 +47,7 @@ T= [
 
 T_matrix= np.array([p.A for p in T])
 
-robot.plot(q=T_matrix.q, limits=[-1.737, 1.737, -1.737, 1.737, -2.3, 2.3],eeframe=True, backend='pyplot',shadow=True,jointaxes=False,block=True)
+robot.plot(q=T, limits=[-1.737, 1.737, -1.737, 1.737, -2.3, 2.3],eeframe=True, backend='pyplot',shadow=True,jointaxes=False,block=True)
 
 #Preguntar al profe 
 via= np.empty((0,3))
