@@ -73,19 +73,19 @@ T_angulos = robot.ikine_LM(np.array(T_cubo), q0=q).q
 
 # robot.plot(np.array(T_angulos),block=True,dt=3)
 p_lim = [-1, 1, -1, 1, -0.15, 1.5]
-# plot_robot_trajectory(
-#     robot=robot,
-#     q_trajectory=np.array(T_angulos),
-#     limits=p_lim,
-#     eeframe=True,
-#     jointaxes=False,
-#     shadow=True,
-#     drawing_mode='continuous',  # o 'segments' si prefieres
-#     traj_color='r',             # Color de la trayectoria completa
-#     drawing_color='b',          # Color del trazo principal
-#     dt=1,
-#     block=True
-# )
+plot_robot_trajectory(
+    robot=robot,
+    q_trajectory=np.array(T_angulos),
+    limits=p_lim,
+    eeframe=True,
+    jointaxes=False,
+    shadow=True,
+    drawing_mode='continuous',  # o 'segments' si prefieres
+    traj_color='r',             # Color de la trayectoria completa
+    drawing_color='b',          # Color del trazo principal
+    dt=1,
+    block=True
+)
 
 # Segundo empieza aquí
 
