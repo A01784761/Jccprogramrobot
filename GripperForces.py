@@ -33,7 +33,7 @@ def calculateGripperForces(atotal, alpha, r, omega, alineal, mass, gravity,linea
     return F_total
 
 # Example usage
-F_total = calculateGripperForces(atotal, alpha, r, omega, alineal, mass, gravity)
+F_total = calculateGripperForces(atotal, alpha, r, omega, alineal, mass, gravity,linearv)
 print(f"Total force required by the gripper: {F_total}")
 
 

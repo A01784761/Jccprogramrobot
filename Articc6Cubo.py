@@ -161,6 +161,7 @@ T2 = np.array([
     [np.deg2rad(10), np.deg2rad(12), np.deg2rad(14), np.deg2rad(16), np.deg2rad(18), np.deg2rad(19)],
     [np.deg2rad(4), np.deg2rad(16), np.deg2rad(60), np.deg2rad(43), np.deg2rad(46), np.deg2rad(3)], 
 ])
+
 jointraj = []
 for i in range(len(T2)-1):
     #Valor inicial incrementa con i 
